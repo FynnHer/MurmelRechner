@@ -76,11 +76,11 @@ async function execute() {
   while (true) {
     processLine();
     if (!shouldExecute) {
-      await sleep(1000);
+      await sleep(50);
       resetSimulator();
       break;
     }
-    await sleep(1000);
+    await sleep(50);
   }
 }
 
